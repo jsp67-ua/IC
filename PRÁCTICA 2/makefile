@@ -18,6 +18,10 @@ Est: $(SRC_FILE)
 OptA: $(SRC_FILE)
 	g++ $(CFLAGS) -O3 $< -o $(TARGET)
 
+#Lanzar el programa 
+Run: gauss
+	./$(TARGET) 1000
+
 # Eliminar el archivo ejecutable.
 clean:
 	rm $(TARGET)
