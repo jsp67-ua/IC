@@ -2,13 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <omp.h>
+#include <chrono>
 
 using namespace std;
 /** Main function */
 int main(int argc, char *argv[])
 {
 
-    clock_t start = clock();
+    auto start = chrono::high_resolution_clock::now();
 
     int mat_size, i, j, step;
     if (argc == 1)
@@ -59,7 +60,7 @@ int main(int argc, char *argv[])
     }
 
     cout << endl
-              << "Matriz utilizando el método de eliminación gaussiana: " << endl;
+         << "Matriz utilizando el método de eliminación gaussiana: " << endl;
     for (i = 0; i < mat_size; i++)
     {
         for (j = 0; j <= mat_size; j++)
@@ -70,7 +71,7 @@ int main(int argc, char *argv[])
         cout << endl;
     }
     cout << endl
-              << "Valor del método de eliminación gaussiano: " << endl;
+         << "Valores de los números del método de eliminación gaussiano: " << endl;
     for (i = mat_size - 1; i >= 0; i--)
     {
         double sum = 0;
@@ -96,12 +97,13 @@ int main(int argc, char *argv[])
     delete[] mat;
     delete[] x;
 
-    clock_t end = clock();
+    auto end = chrono::high_resolution_clock::now();
 
-    // Calcular el tiempo transcurrido en segundos
-    double elapsed_time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
+    // Calcula la duración en microsegundos (puedes cambiar la unidad si lo deseas)
+    chrono::duration<double> duration = end - start;
 
-    cout << "Tiempo de ejecución: " << elapsed_time << " segundos." << endl;
+    // Imprime el tiempo transcurrido
+    cout << "Tiempo de ejecución: " << duration.count() << " segundos" << std::endl;
 
     return 0;
 }
