@@ -5,3 +5,6 @@
 2/10/23: Continuamos con la práctica 2, implementación algoritmo.
 
 16/10/23: Continuar con la Práctica 2, implementación makefile y modificaciones.
+
+23/10/23: Introducción a la práctica 3, "Paralelización mediante OpenMP y programación asíncrona del revelado digitalde fotografías". Pruebas con las librerias
+y ejemplos de OpenMP, std::async y std::vector
