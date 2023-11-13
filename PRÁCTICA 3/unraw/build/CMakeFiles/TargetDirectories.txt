@@ -1,0 +1,7 @@
+/home/javi/IC/P3/unraw/build/CMakeFiles/unraw.dir
+/home/javi/IC/P3/unraw/build/CMakeFiles/edit_cache.dir
+/home/javi/IC/P3/unraw/build/CMakeFiles/rebuild_cache.dir
+/home/javi/IC/P3/unraw/build/LibRaw/CMakeFiles/raw.dir
+/home/javi/IC/P3/unraw/build/LibRaw/CMakeFiles/raw_r.dir
+/home/javi/IC/P3/unraw/build/LibRaw/CMakeFiles/edit_cache.dir
+/home/javi/IC/P3/unraw/build/LibRaw/CMakeFiles/rebuild_cache.dir
